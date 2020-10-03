@@ -8,10 +8,11 @@ public class Nortaichian extends Raza {
 	}
 
 	public void atacar(Raza objetivo) {
-		if (this.posicion.distaciaEntrePuntos(objetivo.posicion) < this.rangoCM) {
+		if (this.posicion.distaciaEntrePuntos(objetivo.posicion)*100 < this.rangoCM) {
 			objetivo.recibirAtaque(this);
 			if (this.vida > 119 - 119 * 0.02) {
-				this.vida += Math.round(this.vida * 0.02);
+				this.vida += Math.ceil(this.vida * 0.02);
+				
 			}
 		}
 

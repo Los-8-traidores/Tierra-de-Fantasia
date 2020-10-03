@@ -1,9 +1,8 @@
 
 public class Vainilla extends Raza{
 	
-	public Vainilla(double vida, double rangoCM, double dañoBase, String arma, Punto posicion) {
+	public Vainilla(int vida, double rangoCM, int dañoBase, String arma, Punto posicion) {
 		super(vida, rangoCM, dañoBase, arma, posicion);
-		// TODO Auto-generated constructor stub
 	}
 	
 	public void atacar(Raza objetivo) {
@@ -18,7 +17,7 @@ public class Vainilla extends Raza{
 	}
 	
 	public void descansar() {
-		
+		this.estado="concetrado";
 	}
 	
 	

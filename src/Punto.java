@@ -25,7 +25,7 @@ public class Punto {
 	}
 
 	public double getModule() {
-		return Math.sqrt(Math.pow(this.x, 2) - (Math.pow(this.y, 2)));
+		return Math.sqrt(Math.pow(this.x, 2) + (Math.pow(this.y, 2)));
 	}
 
 	public double distaciaEntrePuntos(Punto p2) {
