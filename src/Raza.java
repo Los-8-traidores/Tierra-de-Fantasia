@@ -1,9 +1,9 @@
 
 public abstract class Raza {
 
-	protected double vida;
+	protected int vida;
 	protected double rangoCM;
-	protected double dañoBase;
+	protected int dañoBase;
 	protected String arma;
 	protected String estado;
 	protected Punto posicion;
@@ -14,7 +14,7 @@ public abstract class Raza {
 
 	
 
-	public Raza(double vida, double rangoCM, double dañoBase, String arma, Punto posicion) {
+	public Raza(int vida, double rangoCM, int dañoBase, String arma, Punto posicion) {
 		super();
 		this.vida = vida;
 		this.rangoCM = rangoCM;
